@@ -3,11 +3,11 @@ import { render } from "react-dom";
 import { Provider } from "react-redux";
 
 import { store } from "./store/store";
-import App from "./App";
+import RouterComponent from "./routing/routing";
 
 render(
   <Provider store={store}>
-    <App />
+    <RouterComponent />
   </Provider>,
   document.getElementById("root")
 );
