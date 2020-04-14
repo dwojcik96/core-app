@@ -1,6 +1,6 @@
-import { INIT } from "../types/app";
+import { INIT_APP } from "../types/app";
 
-export const init = (user) => ({
-  type: INIT,
+export const initApp = (user) => ({
+  type: INIT_APP,
   user,
 });

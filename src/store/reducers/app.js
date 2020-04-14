@@ -1,4 +1,4 @@
-import { INIT } from "../types/app";
+import { INIT_APP } from "../types/app";
 
 const initialState = {
   user: {},
@@ -6,9 +6,9 @@ const initialState = {
 
 const app = (state = initialState, action) => {
   switch (action.type) {
-    case INIT:
+    case INIT_APP:
       const { user } = action;
-      return [...state, user];
+      return { ...state, user };
     default:
       return state;
   }
