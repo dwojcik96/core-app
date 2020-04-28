@@ -19,3 +19,5 @@ export const privateRoutes = [
     exact: true,
   },
 ];
+
+export const something = [];
